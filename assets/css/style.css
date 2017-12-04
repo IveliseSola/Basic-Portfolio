@@ -1,4 +1,12 @@
 
+.clearfix:after {
+    content: '.';
+    clear: both;
+    display: block;
+    height: 0;
+    visibility: hidden;
+}
+
 body {
 	background-color: #ffffff;
     font-weight: 300;
@@ -28,7 +36,11 @@ p, li {
 	line-height: 145%; 
 }
 
-.main {background-color: #ededed; }
+.main-container { 
+	background-color: whitesmoke;
+	width: 100%;
+	float: left;
+}
 
 .bar {
 	background-color: #ffffff;
@@ -42,7 +54,7 @@ p, li {
 	list-style: none;
 	margin-top: 15px;
 	position: relative;
-	right: 160px;
+	right: 250px;
 }
 
 .bar nav ul {
@@ -64,15 +76,16 @@ p, li {
 	float: left;
 	margin-top: 0;
 	position: relative;
-	left: 140px;
+	left: 200px;
 }
 
 .bio {
 	width: 650px;
 	height: 500px;
-	margin: 20px;
-	position: relative;
-	left: 120px;
+	margin: 40px 20px 20px 200px;
+	float: left;
+	/*position: relative;
+	left: 120px;*/
 	background-color: #ffffff;
 }
 
@@ -107,12 +120,39 @@ p, li {
 .connect {
 	background-color: #ffffff;
 	width: 270px;
-	height: 370px;
-	float: right;
+	height: 200px;
+	/*display: inline-block;*/
+	float: left;
+	text-align: center;
+	margin: 40px 0  0 20px;
+}
+
+.connect h3 {
+	color: #4aaaa5;
+	border-bottom: 2px solid #cccccc;
+    padding-bottom: 15px;
 }
 
 .connect img {
 	height: 50px;
+}
+
+.connect a {
+	text-decoration: none;
+}
+
+footer {
+	float: left;
+	width: 100%;
+	background-color: #666666;
+	margin-top: 30px;
+}
+
+footer p{
+	color: #ffffff;
+	font-size: 70%;
+	
+	text-align: center;
 }
 
 
