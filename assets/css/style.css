@@ -1,0 +1,50 @@
+
+body {
+	background-color: #ededed;
+
+}
+
+.bar {
+	background-color: #ffffff;
+	width: 94%;
+	margin-left: 3%;
+	height: 70px;
+	border-bottom: 2px solid #cccccc;
+	/*border-color: #cccccc;*/
+}
+
+.bar nav {
+    float: right;
+	list-style: none;
+	margin-top: 20px;
+}
+
+.bar li {
+    display: inline-block;
+	margin-right: 10px;
+}
+
+.bar h1 {
+	color: #ffffff;
+	background-color: #4aaaa5;
+	height: 50px;
+	width: 200px;
+	text-align: center;
+	padding-top: 20px;
+	float: left;
+	margin-top: 0;
+	position: relative;
+	left: 
+}
+
+.bio {
+	width: 600px;
+	margin: 0, 25px;
+	background-color: #ffffff;
+
+
+
+}
+
+
+
