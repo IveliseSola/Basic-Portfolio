@@ -1,14 +1,31 @@
 
 body {
 	background-color: #ffffff;
-
+    font-weight: 300;
+    font-size: 20px;
 }
 
 h1,h2,h3 {font-family:'Georgia', Times, Times New Roman, serif;}
 
+h1 {
+	font-size: 190%;
+	word-spacing: 3px;
+	letter-spacing: 1px;
+}
+
+h2 {
+	font-size: 150%;
+    word-spacing: 2px;
+    letter-spacing: 1px;
+}
+
+h3 { font-size: 110%; }
+
 p, li {
 	font-family:'Arial', 'Helvetica Neue', Helvetica, sans-serif;
 	color: #777777;
+	font-size: 90%;
+	line-height: 145%; 
 }
 
 .main {background-color: #ededed; }
@@ -16,7 +33,6 @@ p, li {
 .bar {
 	background-color: #ffffff;
 	width: 100%;
-	/*margin-left: 3%;*/
 	height: 70px;
 	border-bottom: 2px solid #cccccc;
 }
@@ -29,6 +45,10 @@ p, li {
 	right: 160px;
 }
 
+.bar nav ul {
+	height: 28px;
+}
+
 .bar li {
     display: inline-block;
 	margin-right: 10px;
@@ -38,7 +58,7 @@ p, li {
 	color: #ffffff;
 	background-color: #4aaaa5;
 	height: 50px;
-	width: 200px;
+	width: 300px;
 	text-align: center;
 	padding-top: 20px;
 	float: left;
@@ -49,7 +69,7 @@ p, li {
 
 .bio {
 	width: 650px;
-	height: 450px;
+	height: 500px;
 	margin: 20px;
 	position: relative;
 	left: 120px;
@@ -59,26 +79,41 @@ p, li {
  .bio h2 {
 	color: #4aaaa5;
     position: relative;
+    float: left;
     top: 25px;
     left: 25px;
     margin: 10px 5px;
-    width: 200px;
+    width: 600px;
+    border-bottom: 2px solid #cccccc;
+    padding-bottom: 15px;
 }
 
-.bio hr {
-	/*color: #cccccc;*/
+/*.bio hr {
 	width: 90%;
-}
+}*/
 
 .bio img {
 	height: 150px;
-	margin: 20px 10px 10px 20px;
+	margin: 40px 10px 10px 20px;
 	float: left;
 }
 
 .bio p { 
 	text-align: justify;
-	margin: 20px 10px; }
+	margin: 20px 15px; 
+	padding-top: 70px;
+}
+
+.connect {
+	background-color: #ffffff;
+	width: 270px;
+	height: 370px;
+	float: right;
+}
+
+.connect img {
+	height: 50px;
+}
 
 
 
