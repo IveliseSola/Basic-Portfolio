@@ -1,11 +1,11 @@
 
-.clearfix:after {
+/*.clearfix:after {
     content: '.';
     clear: both;
     display: block;
     height: 0;
     visibility: hidden;
-}
+}*/
 
 body {
 	background-color: #ffffff;
@@ -13,7 +13,10 @@ body {
     font-size: 20px;
 }
 
-h1,h2,h3 {font-family:'Georgia', Times, Times New Roman, serif;}
+h1,h2,h3 { 
+	font-family:'Georgia', Times, Times New Roman, serif;
+	font-weight: 600;
+}
 
 h1 {
 	font-size: 190%;
@@ -22,22 +25,27 @@ h1 {
 }
 
 h2 {
-	font-size: 150%;
+	font-size: 160%;
     word-spacing: 2px;
     letter-spacing: 1px;
     color: #4aaaa5;
 }
 
-h3 { font-size: 110%; }
+h3 { font-size: 130%; }
 
-p, li {
+p,
+li, 
+label, 
+textarea, 
+input {
 	font-family:'Arial', 'Helvetica Neue', Helvetica, sans-serif;
 	color: #777777;
 	font-size: 90%;
 	line-height: 145%; 
 }
 
-.main-container { 
+.main-container-bio,
+.main-container-contact { 
 	background-color: #ededed;
 	width: 100%;
 	float: left;
@@ -84,7 +92,8 @@ p, li {
 	left: 200px;
 }
 
-.bio {
+.bio,
+.contact {
 	width: 650px;
 	height: 500px;
 	margin: 40px 20px 20px 200px;
@@ -95,15 +104,13 @@ p, li {
 	border: 1px solid #CCCCCC;
 }
 
- .bio h2 {
-    position: relative;
+ .bio h2,
+ .contact h2 {
     float: left;
-    top: 25px;
-    left: 25px;
+    padding:25px 0 15px 25px;
     margin: 10px 5px;
     width: 600px;
     border-bottom: 2px solid #CCCCCC;
-    padding-bottom: 15px;
 }
 
 /*.bio hr {
@@ -111,7 +118,7 @@ p, li {
 }*/
 
 .bio img {
-	height: 150px;
+	height: 170px;
 	margin: 40px 10px 10px 20px;
 	float: left;
 }
@@ -134,34 +141,62 @@ p, li {
 }
 
 .connect h3 {
-	padding-top: 10px;
+	padding-top: 25px;
 	color: #4aaaa5;
 	border-bottom: 2px solid #CCCCCC;
     padding-bottom: 15px;
 }
 
 .connect img {
-	padding-top: 20px;
+	padding-top: 30px;
 	padding-left: 5px;
-	height: 50px;
+	height: 70px;
 }
 
 .connect a {
 	text-decoration: none;
 }
 
-//-------------------------------------------------
 
 /* Contact page */
 
-.form {
-	background-color: #ffffff;
-	width: 650px;
-	height: 600px;
-	float: left;
-	border: 1px solid #CCCCCC;
+.contact { height: 600px; }
+
+.contact-form {
+	width: 550px;
+    float: left;
+    background-color: #ffffff;
+    padding-top: 20px;
+} 
+
+/*label,
+input,
+textarea {
+	margin: 15px 0;
+}*/
+
+input { 
+	font-size: 60%; 
+	padding-top:5px;
+	width: 500px;
+	/*margin-left: 20px;*/
 }
-.form 
+
+label,
+textarea,
+input {
+	position: relative;
+	left: 30px;
+}
+
+label {margin-top: 30px;}
+
+textarea {
+	width: 530px;
+	
+	height: 150px;
+}
+
 
 
 
