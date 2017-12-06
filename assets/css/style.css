@@ -115,7 +115,7 @@ li { color: #777777; }
 .bio,
 .contact,
 .portfolio {
-	width: 650px;
+	width: 648px;
 	height: 500px;
 	margin: 60px 20px 20px 200px;
 	float: left;
@@ -147,9 +147,8 @@ li { color: #777777; }
 
 .connect {
 	background-color: #ffffff;
-	width: 270px;
+	width: 268px;
 	height: 200px;
-	/*display: inline-block;*/
 	float: left;
 	text-align: center;
 	margin: 60px 0  0 20px;
@@ -167,11 +166,17 @@ li { color: #777777; }
 	padding-top: 30px;
 	padding-left: 5px;
 	height: 70px;
+	opacity: 0.8;
+	transform: scale(1.10);
+	transition: transform 0.5s, opacity 0.5s;
 }
 
-.connect a {
-	text-decoration: none;
+.connect img:hover {
+	opacity: 1;
+	transform: scale(1.03);
 }
+
+.connect a { text-decoration: none; }
 
 
 /* Contact page */
@@ -236,7 +241,7 @@ input[type=submit]{
 .portfolio div {
 	height: 200px;
 	width: 232px;
-	margin: 30px 20px 20px 40px;
+	margin: 30px 20px 20px 50px;
 	float: left;
 	background-color: #4aaaa5;
 }
@@ -257,8 +262,6 @@ input[type=submit]{
 	color: #E6E6E6;
 	transition: border-bottom 0.2s, color 0.2s;
 }
-
-
 
 .portfolio img {
 	height: 150px;
