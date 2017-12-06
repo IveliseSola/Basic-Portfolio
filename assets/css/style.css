@@ -58,6 +58,8 @@ li { color: #777777; }
 	float: left;
 }
 
+/* Nav */
+
 .bar {
 	background-color: #ffffff;
 	width: 100%;
@@ -65,8 +67,17 @@ li { color: #777777; }
 	border-bottom: 2px solid #CCCCCC;
 }
 
-.bar nav a {
+.bar nav a:link,
+.bar nav a:visited {
 	text-decoration: none;
+	color: #CCCCCC;
+	transition: border-bottom 0.2s, color 0.2s;
+}
+
+.bar nav a:hover,
+.bar nav a:active {
+	color: #999999;
+	/*border-bottom: 1px solid #999999;*/
 }
 
 .bar nav {
@@ -99,6 +110,8 @@ li { color: #777777; }
 	left: 200px;
 }
 
+/* Bio */
+
 .bio,
 .contact,
 .portfolio {
@@ -129,6 +142,8 @@ li { color: #777777; }
 	margin: 20px 30px; 
 	padding-top: 70px;
 }
+
+/* Connect */
 
 .connect {
 	background-color: #ffffff;
@@ -226,7 +241,8 @@ input[type=submit]{
 	background-color: #4aaaa5;
 }
 
-.portfolio a {
+.portfolio a:link,
+.portfolio a:visited {
 	text-decoration: none;
 	height: 10px;
 	width: 200px;
@@ -235,6 +251,14 @@ input[type=submit]{
 	text-align: center;
 	font-size: 100%;
 }
+
+.portfolio a:hover,
+.portfolio a:active {
+	color: #E6E6E6;
+	transition: border-bottom 0.2s, color 0.2s;
+}
+
+
 
 .portfolio img {
 	height: 150px;
