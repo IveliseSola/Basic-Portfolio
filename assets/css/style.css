@@ -139,8 +139,9 @@ li { color: #777777; }
 
 .bio p { 
 	text-align: justify;
-	margin: 20px 30px; 
+	margin: 40px; 
 	padding-top: 70px;
+	line-height: 1.8;
 }
 
 /* Connect */
